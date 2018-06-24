@@ -17,7 +17,11 @@
   },
   "homepage": "https://github.com/yvrkarthik/boilerplate-electron-react-typescript#readme",
   "dependencies": {
-    "electron": "^2.0.3"
+    "@types/react": "^16.4.1",
+    "@types/react-dom": "^16.0.6",
+    "electron": "^2.0.3",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1"
   },
   "devDependencies": {
     "typescript": "^2.9.2"
