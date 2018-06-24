@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/yvrkarthik/boilerplate-electron-react-typescript#readme",
   "dependencies": {
-    "electron": "^2.0.3"
+    "electron": "^2.0.3",
+    "typescript": "^2.9.2"
   }
 }
