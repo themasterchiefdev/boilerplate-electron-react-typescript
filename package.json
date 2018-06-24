@@ -1,0 +1,19 @@
+{
+  "name": "boilerplate-electron-react-typescript",
+  "version": "0.1.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yvrkarthik/boilerplate-electron-react-typescript.git"
+  },
+  "author": "Rajiv Karthik Yanamandra",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yvrkarthik/boilerplate-electron-react-typescript/issues"
+  },
+  "homepage": "https://github.com/yvrkarthik/boilerplate-electron-react-typescript#readme"
+}
