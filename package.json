@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/yvrkarthik/boilerplate-electron-react-typescript/issues"
   },
-  "homepage": "https://github.com/yvrkarthik/boilerplate-electron-react-typescript#readme"
+  "homepage": "https://github.com/yvrkarthik/boilerplate-electron-react-typescript#readme",
+  "dependencies": {
+    "electron": "^2.0.3"
+  }
 }
