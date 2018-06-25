@@ -8,6 +8,16 @@ const OUTPUT_DIR = path.resolve(__dirname, "build");
 // Any directories you will be adding code/files into, need to be added to this array so webpack will pick them up
 const defaultInclude = [SRC_RENDERERDIR];
 
+// the path(s) that should be cleaned
+let pathsToClean = ["build"];
+
+// the clean options to use
+let cleanOptions = {
+	exclude: ["index.html"],
+	verbose: true,
+	dry: false
+};
+
 const commonConfig = {
 	output: {
 		path: OUTPUT_DIR,
@@ -33,15 +43,8 @@ const commonConfig = {
 			// All output '.js' files will have any sourcemaps re-processed by 'source-map-loader'.
 			{ enforce: "pre", test: /\.js$/, loader: "source-map-loader" }
 		]
-	}
-	// When importing a module whose path matches one of the following, just
-	// assume a corresponding global variable exists and use that instead.
-	// This is important because it allows us to avoid bundling all of our
-	// dependencies, which allows browsers to cache those libraries between builds.
-	// externals: {
-	// 	react: "React",
-	// 	"react-dom": "ReactDOM"
-	// }
+	},
+	plugins: [new CleanWebpackPlugin(pathsToClean, cleanOptions)]
 };
 module.exports = [
 	Object.assign(
