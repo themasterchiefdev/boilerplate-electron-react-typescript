@@ -1,37 +1,26 @@
 {
-  "name": "boilerplate-electron-react-typescript",
-  "version": "0.1.0",
-  "description": "",
-  "main": "main.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/yvrkarthik/boilerplate-electron-react-typescript.git"
-  },
-  "author": "Rajiv Karthik Yanamandra",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/yvrkarthik/boilerplate-electron-react-typescript/issues"
-  },
-  "homepage": "https://github.com/yvrkarthik/boilerplate-electron-react-typescript#readme",
-  "dependencies": {
-    "@types/react": "^16.4.1",
-    "@types/react-dom": "^16.0.6",
-    "electron": "^2.0.3",
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1"
-  },
-  "devDependencies": {
-    "awesome-typescript-loader": "^5.2.0",
-    "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.3",
-    "babel-loader": "^7.1.4",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1",
-    "source-map-loader": "^0.2.3",
-    "typescript": "^2.9.2",
-    "webpack": "^4.12.1"
-  }
+	"name": "electron-typescript-example",
+	"version": "1.0.0",
+	"description": "template for an electron application using typescript",
+	"main": "build/program.js",
+	"scripts": {
+		"prestart": "tsc",
+		"start": "electron ."
+	},
+	"keywords": [
+		"electron",
+		"typescript"
+	],
+	"author": "Rajiv Yanamandra",
+	"license": "MIT",
+	"dependencies": {
+		"@types/node": "^10.3.5",
+		"@types/react": "^16.4.1",
+		"@types/react-dom": "^16.0.6",
+		"electron": "^2.0.3",
+		"react": "^16.4.1",
+		"react-dom": "^16.4.1",
+		"typescript": "^2.9.2"
+	},
+	"devDependencies": {}
 }

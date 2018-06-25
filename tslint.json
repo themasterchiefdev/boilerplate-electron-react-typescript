@@ -1,0 +1,26 @@
+{
+	"defaultSeverity": "error",
+	"extends": ["tslint:recommended"],
+	"jsRules": {},
+	"rules": {
+		"new-parens": true,
+		"no-arg": true,
+		"no-bitwise": true,
+		"no-conditional-assignment": true,
+		"no-trailing-whitespace": [true, "ignore-comments"],
+		"indent": false,
+		"trailing-comma": false,
+		"ordered-imports": false,
+		"no-invalid-template-strings": true,
+		"no-consecutive-blank-lines": false,
+		"no-empty-interface": true,
+		"promise-function-async": true,
+		"no-console": [false, "log", "error"],
+		"whitespace": false,
+		"object-literal-sort-keys": false,
+		"eofline": false,
+		"semicolon": [true, "always", "ignore-bound-class-methods"],
+		"variable-name": false
+	},
+	"rulesDirectory": []
+}
