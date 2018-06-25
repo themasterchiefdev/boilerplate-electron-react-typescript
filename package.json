@@ -25,8 +25,11 @@
 		"@types/react-dom": "^16.0.6",
 		"awesome-typescript-loader": "^5.2.0",
 		"clean-webpack-plugin": "^0.1.19",
+		"css-loader": "^0.28.11",
 		"electron": "^2.0.3",
+		"mini-css-extract-plugin": "^0.4.0",
 		"source-map-loader": "^0.2.3",
+		"style-loader": "^0.21.0",
 		"typescript": "^2.9.2",
 		"webpack": "^4.12.1",
 		"webpack-cli": "^3.0.8"

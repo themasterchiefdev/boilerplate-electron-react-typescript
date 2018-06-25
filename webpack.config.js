@@ -3,7 +3,7 @@
  */
 const path = require("path");
 const CleanWebpackPlugin = require("clean-webpack-plugin");
-
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 /**
  * Config directories
  * * SRC_MAINDIR 	 -> This is directory for the main Electron process.
@@ -55,10 +55,20 @@ const commonConfig = {
 				exclude: /node_modules/
 			},
 			// All output '.js' files will have any sourcemaps re-processed by 'source-map-loader'.
-			{ enforce: "pre", test: /\.js$/, loader: "source-map-loader" }
+			{ enforce: "pre", test: /\.js$/, loader: "source-map-loader" },
+			{
+				test: /\.css$/,
+
+				use: ["style-loader", "css-loader"]
+			}
 		]
 	},
-	plugins: [new CleanWebpackPlugin(pathsToClean, cleanOptions)]
+	plugins: [
+		new CleanWebpackPlugin(pathsToClean, cleanOptions),
+		new MiniCssExtractPlugin({
+			filename: "'css/[name].css"
+		})
+	]
 };
 
 /**
