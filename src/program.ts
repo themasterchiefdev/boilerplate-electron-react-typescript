@@ -8,7 +8,7 @@ let mainWindow: Electron.BrowserWindow | null;
 
 // tslint:disable-next-line:typedef
 function createWindow() {
-	mainWindow = new BrowserWindow({ width: 500, height: 500 });
+	mainWindow = new BrowserWindow({ width: 800, height: 600 });
 
 	mainWindow.loadURL(
 		url.format({

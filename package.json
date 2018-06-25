@@ -5,7 +5,8 @@
 	"main": "build/program.js",
 	"scripts": {
 		"prestart": "tsc",
-		"start": "electron ."
+		"start": "electron .",
+		"build": "webpack"
 	},
 	"keywords": [
 		"electron",
@@ -14,13 +15,16 @@
 	"author": "Rajiv Yanamandra",
 	"license": "MIT",
 	"dependencies": {
+		"react": "^16.4.1",
+		"react-dom": "^16.4.1"
+	},
+	"devDependencies": {
+		"webpack": "^4.12.1",
+		"webpack-cli": "^3.0.8",
 		"@types/node": "^10.3.5",
 		"@types/react": "^16.4.1",
 		"@types/react-dom": "^16.0.6",
 		"electron": "^2.0.3",
-		"react": "^16.4.1",
-		"react-dom": "^16.4.1",
 		"typescript": "^2.9.2"
-	},
-	"devDependencies": {}
+	}
 }
