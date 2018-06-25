@@ -2,12 +2,11 @@
 
 Template for an Electron application using typescript.
 
-
 ## Install
 
 Clone repo
 
-`git clone https://github.com/James-Frowen/electron-typescript-template.git`
+`git clone https://github.com/yvrkarthik/boilerplate-electron-react-typescript.git`
 
 Install dependencies
 
@@ -27,13 +26,11 @@ Project includes vscode task to build, Build task default keyboard shortcut.
 
 This will watch typescript files and compile on change
 
-
 ## Run
 
 Start with npm script (also runs `tsc` before start)
 
 `npm start`
-
 
 or if electron is install globally
 
