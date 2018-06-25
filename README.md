@@ -32,6 +32,8 @@ Start with npm script (also runs `webpack` before start)
 
 `npm start`
 
+This would create `build/` folder which has all the final files and assets.
+
 or if electron is install globally
 
 `electron .`
