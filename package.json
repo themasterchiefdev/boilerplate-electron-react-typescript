@@ -4,12 +4,14 @@
 	"description": "template for an electron application using typescript",
 	"main": "build/main.js",
 	"scripts": {
-		"start": "electron .",
-		"build": "webpack"
+		"prestart": "webpack",
+		"build": "webpack",
+		"start": "electron ."
 	},
 	"keywords": [
 		"electron",
-		"typescript"
+		"typescript",
+		"react"
 	],
 	"author": "Rajiv Yanamandra",
 	"license": "MIT",

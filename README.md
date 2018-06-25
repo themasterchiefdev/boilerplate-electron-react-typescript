@@ -1,6 +1,6 @@
 # Electron Typescript template
 
-Template for an Electron application using typescript.
+Template for an Electron application using typescript and react.
 
 ## Install
 
@@ -16,7 +16,7 @@ Install dependencies
 
 If typescript is install globally
 
-`tsc`
+`webpack`
 
 #### Within vscode
 
@@ -28,7 +28,7 @@ This will watch typescript files and compile on change
 
 ## Run
 
-Start with npm script (also runs `tsc` before start)
+Start with npm script (also runs `webpack` before start)
 
 `npm start`
 
