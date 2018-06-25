@@ -6,7 +6,6 @@ import * as url from "url";
 
 let mainWindow: Electron.BrowserWindow | null;
 
-// tslint:disable-next-line:typedef
 function createWindow() {
 	mainWindow = new BrowserWindow({ width: 800, height: 600 });
 
