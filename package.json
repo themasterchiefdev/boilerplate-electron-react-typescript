@@ -2,9 +2,8 @@
 	"name": "electron-typescript-example",
 	"version": "1.0.0",
 	"description": "template for an electron application using typescript",
-	"main": "build/program.js",
+	"main": "build/main.js",
 	"scripts": {
-		"prestart": "tsc",
 		"start": "electron .",
 		"build": "webpack"
 	},
@@ -19,12 +18,16 @@
 		"react-dom": "^16.4.1"
 	},
 	"devDependencies": {
-		"webpack": "^4.12.1",
-		"webpack-cli": "^3.0.8",
 		"@types/node": "^10.3.5",
 		"@types/react": "^16.4.1",
 		"@types/react-dom": "^16.0.6",
+		"awesome-typescript-loader": "^5.2.0",
+		"babel-loader": "^7.1.4",
+		"clean-webpack-plugin": "^0.1.19",
 		"electron": "^2.0.3",
-		"typescript": "^2.9.2"
+		"source-map-loader": "^0.2.3",
+		"typescript": "^2.9.2",
+		"webpack": "^4.12.1",
+		"webpack-cli": "^3.0.8"
 	}
 }
