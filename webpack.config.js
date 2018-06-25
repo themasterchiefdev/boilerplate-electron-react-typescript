@@ -4,6 +4,7 @@
 const path = require("path");
 const CleanWebpackPlugin = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 /**
  * Config directories
  * * SRC_MAINDIR 	 -> This is directory for the main Electron process.
@@ -23,7 +24,6 @@ let pathsToClean = ["build"];
 
 // The clean options to use
 let cleanOptions = {
-	exclude: ["index.html"],
 	verbose: true,
 	dry: false
 };
@@ -67,6 +67,11 @@ const commonConfig = {
 		new CleanWebpackPlugin(pathsToClean, cleanOptions),
 		new MiniCssExtractPlugin({
 			filename: "'css/[name].css"
+		}),
+		new HtmlWebpackPlugin({
+			filename: "index.html",
+			template: "./src/assets/index.html",
+			title: "React-TypeScript-Electron Starter"
 		})
 	]
 };
