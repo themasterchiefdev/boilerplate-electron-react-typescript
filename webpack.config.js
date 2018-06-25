@@ -1,22 +1,36 @@
+/**
+ * Import Node dependencies
+ */
 const path = require("path");
-const CleanWebpackPlugin = require("clean-webpack-plugin"); //installed via npm
-// Config directories
+const CleanWebpackPlugin = require("clean-webpack-plugin");
+
+/**
+ * Config directories
+ * * SRC_MAINDIR 	 -> This is directory for the main Electron process.
+ * * SRC_RENDERERDIR -> This is directory for the renderer Electron process.
+ * * OUTPUT_DIR      -> This is directory where the compiled JS files will be placed..
+ */
 const SRC_RENDERERDIR = path.resolve(__dirname, "src/index.tsx");
 const SRC_MAINDIR = path.resolve(__dirname, "src/program.ts");
 const OUTPUT_DIR = path.resolve(__dirname, "build");
 
+// Un-comment this when excluding folders in the common config.
 // Any directories you will be adding code/files into, need to be added to this array so webpack will pick them up
-const defaultInclude = [SRC_RENDERERDIR];
+// const defaultInclude = [SRC_RENDERERDIR];
 
-// the path(s) that should be cleaned
+// The path(s) that should be cleaned
 let pathsToClean = ["build"];
 
-// the clean options to use
+// The clean options to use
 let cleanOptions = {
 	exclude: ["index.html"],
 	verbose: true,
 	dry: false
 };
+
+/**
+ * This is the common config for webpack.
+ */
 
 const commonConfig = {
 	output: {
@@ -46,7 +60,15 @@ const commonConfig = {
 	},
 	plugins: [new CleanWebpackPlugin(pathsToClean, cleanOptions)]
 };
+
+/**
+ * We are defining two exports for the webpack.
+ * We load the common config object in to module.exports.
+ */
 module.exports = [
+	/**
+	 * This targets Electron Main Process.
+	 */
 	Object.assign(
 		{
 			target: "electron-main",
@@ -54,6 +76,9 @@ module.exports = [
 		},
 		commonConfig
 	),
+	/**
+	 * This targets Electron Renderer process.
+	 */
 	Object.assign(
 		{
 			target: "electron-renderer",
